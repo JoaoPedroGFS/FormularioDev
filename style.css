@@ -1,0 +1,138 @@
+/*Geral*/
+:root {
+    --roxo1: rgb(95, 0, 95);
+    --roxo2: rgb(173, 2, 173);
+    --roxo3: rgb(223, 28, 223);
+    --azul: rgb(217, 224, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--roxo1);
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+}
+
+.principal {
+    background-color: var(--azul);
+    color: var(--roxo2);
+    width: 545px;
+    padding: 10px 40px 30px 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 black;
+}
+
+/*Títulos e textos*/
+
+.titulo_prin {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 0 black;
+    color: var(--roxo2);
+}
+
+.subtitulo {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 1px 1px 0 black;
+    color: var(--roxo2);
+}
+
+.infos {
+    font-size: 17px;
+    text-shadow: 1px 1px 2px rgb(39, 37, 37);
+    color: var(--roxo2);
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    top: -2px;
+    
+}
+
+.check_tech label {
+    position: relative;
+    left: -2px;
+}
+
+/*Elementos e divs*/
+
+.nome_sobrenome {
+    display: inline-block;
+}
+
+#sn {
+    position: relative;
+    top: -25px;
+    left: 20px;
+}
+
+#input_sn {
+    position: relative;
+    left: -60px;
+}
+
+.nome_sobrenome input, #email {
+    width: 221px;
+    outline: none;
+    box-shadow: 3px 3px 0 black;
+    border: 2px solid var(--roxo2);
+    border-radius: 3px;
+    padding: 4px 2px 4px 2px;
+    font-size: 14px;
+    margin: 0;
+}
+
+#email {
+    width: 270px;
+    margin: 0;
+}
+
+.select_senior {
+    color: var(--roxo2);
+    font-weight: 600;
+    outline: none;
+    padding: 3px;
+    border: 2px solid purple;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 black;
+}
+
+#ta_exp {
+    outline: none;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 7px 9px 7px 9px;
+    border: 2px solid var(--roxo2);
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 black;
+}
+
+.submit {
+    
+    display: flex;
+    justify-content: center;
+}
+
+#btn_submit {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--roxo2);
+    color: white;
+    padding: 5px 8px 5px 8px;
+    font-size: 16px;
+    box-shadow: 3px 4px 0 black;
+}
+
+#btn_submit:hover {
+    background-color: var(--roxo3);
+    transition: 0.2s;
+}

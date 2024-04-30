@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Dev | JP.DEV</title>
+</head>
+<body>
+
+    <div class="container">
+        <form class="principal">
+            <h1 class="titulo_prin">Cadastro DEVs</h1>
+            <h2 class="subtitulo">Complete as suas informações</h2>
+            <br>
+            <div class="nome_sobrenome">
+                <label for="nome">Nome</label>
+                <br>
+                <input required type="text" name="nome">
+
+                <label id="sn" for="sobrenome">Sobrenome</label>
+                
+                <input required id="input_sn" type="text" name="sobrenome">
+                <br><br>
+
+                <label for="email">Email</label>
+                <br>
+                <input required type="email" name="email" id="email">
+            </div>
+            <br>
+            
+            <h3 class="infos">Qual é a sua área de desenvolvimento?</h3>
+
+            <input required type="radio" name="area" id="front">
+            <label for="front">Front-end</label>
+            <br>
+
+            <input required type="radio" name="area" id="back">
+            <label for="back">Back-end</label>
+            <br>
+
+            <input required type="radio" name="area" id="full">
+            <label for="full">Full-Stack</label>
+
+            <h3 class="infos">Senioridade</h3>
+
+            <select required name="senioridade" class="select_senior">
+                <option hidden>Selecione</option>
+                <option value="junior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Sênior</option>
+            </select>
+
+            <h3 class="infos">Selecione as tecnologias que utiliza:</h3>
+            <div class="check_tech">
+                <input type="checkbox" name="html">
+                <label for="html">HTML</label>
+                &nbsp;
+
+                <input type="checkbox" name="css">
+                <label for="css">CSS</label>
+                &nbsp;
+
+                <input type="checkbox" name="js">
+                <label for="js">JavaScript</label>
+                &nbsp;
+
+                <input type="checkbox" name="php">
+                <label for="php">PHP</label>
+                &nbsp;
+
+                <input type="checkbox" name="java">
+                <label for="java">Java</label>
+                &nbsp;
+
+                <input type="checkbox" name="c#">
+                <label for="c#">C#</label>
+            </div>
+
+            <h3 class="infos">Conte um pouco sobre sua experiência</h3>
+            <textarea required id="ta_exp" cols="72" rows="10"></textarea>
+            <br><br>
+
+            <div class="submit">
+                <input id="btn_submit" type="submit" value="Concluído">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
